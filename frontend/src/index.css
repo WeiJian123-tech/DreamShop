@@ -170,6 +170,25 @@ button:hover {
     background: #141852;
 }
 
+#heroSection {
+    display: flex;
+    flex-direction: row;
+}
+
+#heroSection img {
+    width: 50vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+#explanation {
+    margin-right: 0rem;
+    text-wrap-mode: wrap;
+}
+*/
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .container {
