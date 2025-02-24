@@ -1,0 +1,200 @@
+/* Resets some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #18191a;
+    color: #f2f2f2;
+}
+
+/* Navigation styles */
+/*
+    Thanks to CSS Tricks for Navigation Bar styling:
+    https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/
+
+    Thanks to Code Convey for dropdown menu:
+    https://codeconvey.com/drop-down-navigation-menu-html/
+
+
+*/
+nav {
+    /*width: fit-content;*/
+    width: 100vw;
+    height: auto;
+    background-color: #46189b;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    list-style: none;
+    /*text-align: center;*/
+    vertical-align: middle;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0rem 1rem;
+}
+
+nav ul li a {
+    padding: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbarBtn {
+    padding: 1rem 0rem;
+}
+
+/*Changed to a class for link background color hover.*/
+.navbarBtn:hover {
+    background-color: #141852;
+}
+
+.navbarBtn:active {
+    background-color: #141852;
+}
+
+/* For the dropdown menu */
+nav ul li ul { /* Changed from nav ul ul li and width from 170px*/
+	width: 10vw;
+	float: none;
+	display: list-item;
+	position: relative;
+    margin-top: 0.80rem;
+}
+
+/* removed li > a:after {content: '+'}; */
+
+/* Hide Dropdowns by Default */ /* Removed top: 60px*/
+nav ul li ul {
+	display: none;
+    /*display: block;*/
+	position: absolute;
+    background-color: #141852;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display: list-item; /* Changed from display: inherit*/
+}
+
+/* Added styling to dropdown menu lists*/
+nav ul li ul li {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin: 0rem;
+    text-align: left;
+    z-index: 1;
+}
+
+nav ul li ul li:hover {
+    background-color: #070B34;
+}
+
+#searchBar {
+    margin: 0rem 2rem;
+}
+
+nav input {
+    width: 50vw;
+    height: 5vh;
+    padding: 1rem;
+}
+
+nav button {
+    width: auto;
+    height: 3rem;
+    margin: 0;
+    padding: auto;
+}
+
+a #logo{
+    padding: 0rem;
+    margin: 0rem;
+    vertical-align: middle;
+}
+
+#logo {
+    width: auto;
+    height: 8vh;
+}
+
+/* Main content styles */
+main {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: #18191a;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contentSection {
+    scroll-snap-align: start;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #817c8a;
+    color: #dbdbdb;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+footer div ul  {
+    padding: 0;
+    margin: 1rem 0rem 1.5rem 0rem;
+    position: relative;
+    list-style: none;
+    vertical-align: middle;
+}
+
+footer div ul li {
+    display: inline-block;
+    margin: 0rem 1rem;
+}
+
+/* Button styles */
+button {
+    background: #1a206d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #141852;
+    scale: 1.06
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
