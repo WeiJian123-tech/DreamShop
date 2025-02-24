@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
@@ -139,6 +143,10 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.contentSection {
+    scroll-snap-align: start;
+}
+
 #heroSection {
     display: flex;
     flex-direction: row;
@@ -183,9 +191,19 @@ main {
     text-align: center;
 }
 
-#recProducts img {
-    width: 24vw;
-    height: 34vh;
+#recProducts div {
+    width: 100%;
+    height: auto;
+}
+
+#recProducts div img {
+    width: auto;
+    height: 36vh;
+}
+
+#recProducts p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
 }
 
 #subSection {
@@ -195,7 +213,12 @@ main {
     margin-top: 3rem;
 }
 
-#subSection img {
+#subSection div {
+    width: 100%;
+    height: auto;
+}
+
+#subSection div img {
     width: 40vw;
     height: 100vh;
     padding: 0;
@@ -235,8 +258,8 @@ main {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #18191a;
-    color: #ffffff;
+    background-color: #817c8a;
+    color: #dbdbdb;
     bottom: 0;
     width: 100%;
     height: auto;
@@ -245,7 +268,7 @@ footer {
 
 footer div ul  {
     padding: 0;
-    margin: 1rem 0rem 2rem 0rem;
+    margin: 1rem 0rem 1.5rem 0rem;
     position: relative;
     list-style: none;
     vertical-align: middle;
@@ -254,10 +277,6 @@ footer div ul  {
 footer div ul li {
     display: inline-block;
     margin: 0rem 1rem;
-}
-
-footer ul li a:hover {
-    background-color: #141852;
 }
 
 /* Button styles */
@@ -272,6 +291,7 @@ button {
 
 button:hover {
     background: #141852;
+    scale: 1.06
 }
 
 /* Responsive styles */
