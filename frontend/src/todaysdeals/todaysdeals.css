@@ -38,6 +38,10 @@ span {
     box-shadow: 0rem 0rem 1rem 1rem rgba(70, 121, 131, 0.5);
 }
 
+#productContainer div a img:hover {
+    scale: 1.2;
+}
+
 #productContainer div a p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 28px;
