@@ -10,6 +10,7 @@ span {
 
 #title {
     text-align: center;
+    color: #dbdbde;
 }
 
 #productContainer {
@@ -22,15 +23,25 @@ span {
 }
 
 #productContainer div {
+    width: auto;
+    height: 50vh;
     border: 1px solid black;
-    background-color: rgba(48, 15, 199, 0.25);
+    background-color: rgba(7, 100, 187, 0.5);
 }
 
 #productContainer div a img {
     width: auto;
     height: 50%;
-    margin: 5rem 0rem;
+    margin: 5rem 0rem 1rem 0rem;
     padding: 0;
+    border: 1px solid black;
+    box-shadow: 0rem 0rem 1rem 1rem rgba(70, 121, 131, 0.5);
+}
+
+#productContainer div a p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #dbdbde;
 }
 
 @media (max-width: 768px) {
