@@ -49,7 +49,12 @@
 
 #recProducts div img {
     width: auto;
-    height: 36vh;
+    height: 32vh;
+    margin: 1rem 0rem;
+}
+
+#recProducts div a {
+    text-decoration: none;
 }
 
 #recProducts p {
