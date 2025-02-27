@@ -1,0 +1,25 @@
+#cartContainer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#cartItems {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px dashed gray;
+}
+
+#cartItems p {
+    margin: 0rem;
+}
