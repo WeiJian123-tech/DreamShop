@@ -33,8 +33,8 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./frontend/src/index
-          destination: ./frontend/src/index
+          source: /DreamShop/frontend/src/index
+          destination: ./DreamShop/frontend/src/index
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
