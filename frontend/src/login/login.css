@@ -1,0 +1,34 @@
+main {
+    display: grid;
+    justify-content: center;
+}
+
+#acctCard {
+    display: grid;
+    background-color: #3e0a81;
+    place-items: center;
+    width: 50vw;
+    height: auto;
+}
+
+#acctCard div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+}
+
+#acctCard div label {
+    text-align: left;
+}
+
+#acctCard div input {
+    border: 2px solid black;
+}
+
+#acctCard a {
+    color: #d6d4d4;
+}
+
+#acctCard a:hover {
+    color: #e6eff8;
+}

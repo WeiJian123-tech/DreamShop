@@ -6,7 +6,7 @@
         <title>DreamShop</title>
         <link rel="icon" type="image/icon" href="/DreamShop/frontend/img/DreamShop_Logo.png" />
         <link rel="stylesheet" type="text/css" href="/DreamShop/frontend/src/globals.css" />
-        <link rel="stylesheet" type="text/css" href="shop.css" />
+        <link rel="stylesheet" type="text/css" href="./login.css" />
     </head>
     <body>
         <nav class="contentSection">
@@ -47,6 +47,27 @@
 
         <main>
 
+            <div class="contentSection" id="acctCard">
+                <form>
+                    <div>
+                        <h1>Login</h1>
+                    </div>
+
+                    <div>
+                        <label>Email Address: <input type="email" /> </label>
+                        <label>Password: <input type="password" /> </label>
+                    </div>
+
+                    <div>
+                        <button type="submit">
+                            Login
+                        </button>
+                    </div>
+                </form>
+
+                <a href="./signup.html">Don't have an account? Sign up!</a>
+            </div>
+
         </main>
 
         <footer class="contentSection">
@@ -68,7 +89,5 @@
                 </div>
             </div>
         </footer>
-
-        <script src="index.js" async />
     </body>
 </html>
