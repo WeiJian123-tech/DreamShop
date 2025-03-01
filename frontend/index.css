@@ -67,6 +67,8 @@
     flex-direction: row;
     background-color: #26095f;
     margin-top: 3rem;
+    width: 100vw;
+    height: auto;
 }
 
 #subSection div {
@@ -108,4 +110,37 @@
 #subTxtSection button {
     width: auto;
     height: 6vh;
+}
+
+@media (max-width: 768px) {
+    #heroSection img  {
+        width: 74vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    #heroTxtSection {
+        padding: 1rem 0rem;
+    }
+
+    #recProducts div img {
+        height: 18vh;
+        margin: 0rem 1rem;
+    }
+
+    #subSection div img {
+        width: 60vw;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    #subTxtSection {
+        padding: 1rem;
+        word-wrap: break-word;
+    }
+
+    #subTxtSection h1 {
+        font-size: 18px;
+    }
 }
