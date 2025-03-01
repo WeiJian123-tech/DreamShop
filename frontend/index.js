@@ -1,3 +1,3 @@
 function getShopURL() {
-    window.location.href = "/DreamShop/frontend/src/shop/shop.html";
+    window.location.href = "src/shop/shop.html";
 }
